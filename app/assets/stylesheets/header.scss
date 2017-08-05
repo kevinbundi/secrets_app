@@ -1,0 +1,39 @@
+nav.my_navbar{
+	background-color: #015c77;
+}
+div.container #my_navabar_button_toggle{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div.container #home_ul{
+	margin-left: -40px;
+	margin-bottom: 0rem;
+}
+
+div.container #home_ul a{
+	color: white;
+	margin-right: 1rem;
+}
+
+div.container #home_ul #secrets_anchor_tag{
+	font-size: 2.5rem;
+	font-family: "Caveat";
+}
+
+div.container .my_collapse .profile_signout{
+	margin-left: 1rem; 
+}
+
+div.container .my_collapse .profile_signout a i{
+	color: white;
+}
+
+@media only screen and (max-width:575px){
+	.my_navbar .container{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+}

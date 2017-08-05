@@ -1,0 +1,10 @@
+<% if flash[:success] %>
+	<div class="alert alert-info alert-dismissable fade show">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<%= flash[:success] %>
+	</div>
+<% end %>
+
+<h1><%=@user.username%>
+	<%= link_to 'edit', edit_user_path(@user.id), remote: true, class:"my_links" %>
+</h1>

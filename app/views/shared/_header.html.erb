@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse navbar-toggleable-sm bg-faded justify-content-center fixed-top my_navbar">
+	<div class="container">
+		    <button class="navbar-toggler navbar-toggler-right" id="my_navabar_button_toggle" type="button" data-toggle="collapse" data-target="#my_collapsingNavbar" aria-expanded="false">
+		        <span class="navbar-toggler-icon"></span>
+		    </button>
+	    <ul id="home_ul" class="navbar-brand d-flex w-50 mr-auto my_navbar_brand">
+	    	<div class="my-auto">
+		    	<a href="/"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+		    </div>
+		    <div class="my-auto"> <!-- vertical align -->
+		    	<a id="secrets_anchor_tag" href="/">Secrets</a>
+		    </div>
+		</ul>
+	    <div class="navbar-collapse collapse my_collapse" id="my_collapsingNavbar">
+	        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+	            <li class="nav-item profile_signout">
+	                <a class="nav-link" href="/users/<%=current_user.id%>"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <%= current_user.username %></a>
+	            </li>
+	            <li role="seperator" class="dropdown-divider"></li>
+	            <li class="nav-item profile_signout">
+	                <a class="nav-link" href="/sessions/<%=current_user.id%>" data-method="delete""><i" class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+	            </li>
+	        </ul>
+	    </div>
+	</div> <!-- end of div.container -->
+</nav>

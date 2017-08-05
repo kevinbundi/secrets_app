@@ -1,0 +1,14 @@
+<div class="col-md-6 login">
+	<div class="link">
+		<% if flash[:danger] %>
+			<div class="alert alert-danger alert-dismissable fade show">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<% flash[:danger].each do |error| %>
+					<li style="list-style: none;"><%= error %></li>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+	<%= render 'registrationForm.html' %>
+	<p style="font-size:13px;">Already have an account? <%= link_to 'Sign in', new_session_path %></p>
+</div>

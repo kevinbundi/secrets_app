@@ -1,0 +1,16 @@
+<div class="col-md-6 login">
+	<% if flash[:success] %>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<%= flash[:success] %>
+		</div>	
+	<% end %>
+	<% if flash[:danger] %>
+		<div class="alert alert-danger alert-dismissable fade show">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<%= flash[:danger]%>
+		</div>
+	<% end %>	
+	<%= render 'loginForm.html' %> 
+	<p style="font-size: 13px;">New Member? <%= link_to 'Sign Up', new_user_path %></p>
+</div>	

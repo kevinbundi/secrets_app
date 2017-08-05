@@ -1,0 +1,22 @@
+<div class="col-md-6 secrets_main">
+	<% if flash[:danger] %>
+ 		<% flash[:danger].each do |msg| %>
+ 			<div class="alert alert-danger alert-dismissable fade show">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<p class="error_p"><%= msg %></p>
+			</div>
+ 		<%end%>
+ 	<%end%>
+
+	<h6>Change Username</h6>
+	<%= form_for @user, remote: true do |f| %>
+		<div class="form-group ">
+			
+			<%= f.text_field :username, class: "form-control" %>
+			<%= f.submit value: "Update", class: "btn btn-info pull-right", id: "my-update-btn" %>
+		</div>
+		<div class="form-group">
+			
+		</div>
+	<% end %>
+</div>
