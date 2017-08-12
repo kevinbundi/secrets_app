@@ -55,4 +55,6 @@ gem 'responders'
 
 # gem 'rails-footnotes', '>= 4.0.0', '<5'
 
+gem 'rails_12factor', group: :production
 
+ruby "2.2.4"
